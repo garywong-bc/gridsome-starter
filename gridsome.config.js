@@ -6,6 +6,6 @@
 
 module.exports = {
   siteName: 'Gridsome',
-  siteDescription: 'One stop shopping..',
+  siteDescription: 'One stop shopping lorem ipsum..',
   plugins: [],
 };

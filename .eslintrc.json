@@ -5,8 +5,8 @@
   },
   "extends": [
     "airbnb-base",
-    "prettier",
-    "plugin:vue/essential"
+    "plugin:vue/essential",
+    "prettier"
     // "plugin:node/recommended"
   ],
   "plugins": ["prettier", "vue"],
