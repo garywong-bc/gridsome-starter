@@ -12,12 +12,29 @@ module.exports = {
       use: "@gridsome/source-filesystem",
       options: {
         typeName: "Post",
-        path: "content/posts/**/*.md",
-        route: "/posts/:slug",
+        baseDir: "./content",
+        path: "**/*.md",
+        // NOTE: above, 'route' was optional as it built it off of 'baseDir/typeName'
+        refs: {
+          // Reference to existing authors by id.
+          // author: 'Author',
+          // Create a Tag content type and its nodes automatically.
+          tags: {
+            typeName: "Tag",
+            create: true,
+            route: "/tag/:id",
+            // NOTE: above, 'route' is needed as GraphQL didn't generate 'path' at first
+          },
+        },
       },
     },
   ],
-  // templates: {
-  //   BlogPost: "/posts/:slug",
-  // },
+  templates: {
+    Post: "/blog/:slug",
+  },
+  transformers: {
+    remark: {
+      // global remark options
+    },
+  },
 };

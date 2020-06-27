@@ -1,12 +1,12 @@
 ---
-title: First Post
+title: Third Post
 excerpt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
 date: 2020-06-26
 tags: ['art', 'technology']
 cover_image: "./images/bg-1.jpg"
 ---
 
-## First Post
+## Third Post
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 
