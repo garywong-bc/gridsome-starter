@@ -8,7 +8,7 @@
 <script>
 export default {
   data: () => ({
-    href: "https://www.sbd.ca/"
+    href: 'https://www.sbd.ca/'
   }),
   computed: {
     getCurrentYear() {

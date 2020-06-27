@@ -15,18 +15,6 @@
   </Layout>
 </template>
 
-<script>
-import Footer from "~/components/Footer.vue";
-
-export default {
-  metaInfo: {
-    title: "Hello, world!"
-  },
-  components: {
-    Footer
-  }
-};
-</script>
 
 <style>
 .home-links a {

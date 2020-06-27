@@ -5,7 +5,19 @@
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
 module.exports = {
-  siteName: 'Gridsome',
-  siteDescription: 'One stop shopping lorem ipsum..',
-  plugins: [],
+  siteName: "Gridsome",
+  siteDescription: "One stop shopping lorem ipsum..",
+  plugins: [
+    {
+      use: "@gridsome/source-filesystem",
+      options: {
+        typeName: "Post",
+        path: "content/posts/**/*.md",
+        route: "/posts/:slug",
+      },
+    },
+  ],
+  // templates: {
+  //   BlogPost: "/posts/:slug",
+  // },
 };
