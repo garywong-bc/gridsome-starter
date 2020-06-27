@@ -7,6 +7,8 @@
 module.exports = {
   siteName: "Gridsome",
   siteDescription: "One stop shopping lorem ipsum..",
+  // NOTE: credentials should use dotEnv, referencing process.env.XXX
+  //       (no quotes needed arount this variable)
   plugins: [
     {
       use: "@gridsome/source-filesystem",
